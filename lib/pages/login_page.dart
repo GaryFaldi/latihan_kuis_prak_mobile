@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
 
                 // Judul
                 const Text(
-                  "Movie App",
+                  "Movie App 154",
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 32),
@@ -99,6 +99,18 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: _login,
                     child: const Text("Login"),
                   ),
+                ),
+                const SizedBox(height: 12),
+
+                // Clue login
+                const Text(
+                  "Clue: Username = GaryFaldi | Password = 154",
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.grey,
+                    fontStyle: FontStyle.italic,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

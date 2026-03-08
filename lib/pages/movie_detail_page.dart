@@ -91,7 +91,6 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Poster kecil rounded
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Image.network(
