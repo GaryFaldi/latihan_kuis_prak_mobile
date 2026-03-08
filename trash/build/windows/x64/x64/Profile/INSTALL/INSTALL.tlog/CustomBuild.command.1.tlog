@@ -1,0 +1,10 @@
+^C:\USERS\ACER\ONEDRIVE\DOCUMENTS\SEMESTER 6\PRAK MOBILE\TUGAS1\LATIHAN_KUIS_PRAK_MOBILE\BUILD\WINDOWS\X64\CMAKEFILES\567E0BDB03AEFDDFC8AD4BB5338E3717\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

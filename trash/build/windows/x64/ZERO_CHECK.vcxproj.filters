@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Acer\OneDrive\Documents\Semester 6\Prak Mobile\Tugas1\latihan_kuis_prak_mobile\build\windows\x64\CMakeFiles\567e0bdb03aefddfc8ad4bb5338e3717\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CDDECCDE-7ABE-3B2E-90AE-0FFED7DC7C44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

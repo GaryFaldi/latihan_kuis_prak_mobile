@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Acer\OneDrive\Documents\Semester 6\Prak Mobile\Tugas1\latihan_kuis_prak_mobile\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Acer\OneDrive\Documents\Semester 6\Prak Mobile\Tugas1\latihan_kuis_prak_mobile\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Acer\OneDrive\Documents\Semester 6\Prak Mobile\Tugas1\latihan_kuis_prak_mobile\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Acer\OneDrive\Documents\Semester 6\Prak Mobile\Tugas1\latihan_kuis_prak_mobile\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Acer\OneDrive\Documents\Semester 6\Prak Mobile\Tugas1\latihan_kuis_prak_mobile\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CDDECCDE-7ABE-3B2E-90AE-0FFED7DC7C44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6659BDF3-73A2-3EEE-94BA-59C94C534E27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

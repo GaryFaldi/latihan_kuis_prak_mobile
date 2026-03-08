@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/cmake_install.cmake",
+		"C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/flutter/cmake_install.cmake",
+		"C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/runner/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

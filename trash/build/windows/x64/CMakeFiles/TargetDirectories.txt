@@ -1,0 +1,10 @@
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/CMakeFiles/INSTALL.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/CMakeFiles/ALL_BUILD.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/flutter/CMakeFiles/flutter_assemble.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/flutter/CMakeFiles/INSTALL.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/runner/CMakeFiles/latihan_kuis_a.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/runner/CMakeFiles/INSTALL.dir
+C:/Users/Acer/OneDrive/Documents/Semester 6/Prak Mobile/Tugas1/latihan_kuis_prak_mobile/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir
