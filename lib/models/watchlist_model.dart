@@ -1,7 +1,6 @@
 import 'movie_model.dart';
 
 class WatchlistModel {
-  // Static list to store saved movies across the app
   static List<MovieModel> savedMovies = [];
 
   static bool isSaved(MovieModel movie) {

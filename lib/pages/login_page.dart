@@ -11,13 +11,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  bool _obscurePassword = true;
   String? _errorMessage;
-
-  // Ganti 3 digit terakhir NIM Anda di sini
-  final String _correctPassword =
-      "154"; // <-- GANTI DENGAN 3 DIGIT TERAKHIR NIM
-  final String _correctUsername = "admin";
 
   void _login() {
     final username = _usernameController.text.trim();
@@ -30,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
       return;
     }
 
-    if (username == _correctUsername && password == _correctPassword) {
+    if (username == "GaryFaldi" && password == "154") {
       setState(() => _errorMessage = null);
       Navigator.pushReplacement(
         context,
@@ -44,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0D0D0D),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -52,164 +46,59 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo / Icon
-                Container(
-                  width: 90,
-                  height: 90,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFE50914),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: const Icon(
-                    Icons.movie_filter_rounded,
-                    color: Colors.white,
-                    size: 50,
-                  ),
+                // Icon
+                const Icon(
+                  Icons.movie_filter_rounded,
+                  size: 80,
+                  color: Color.fromARGB(255, 64, 0, 255),
                 ),
-                const SizedBox(height: 24),
-                const Text(
-                  "CineVault",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                const Text(
-                  "Masuk untuk melanjutkan",
-                  style: TextStyle(color: Colors.white54, fontSize: 14),
-                ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 16),
 
-                // Username field
+                // Judul
+                const Text(
+                  "Movie App",
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 32),
+
+                // Kolom Username
                 TextField(
                   controller: _usernameController,
-                  style: const TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Username",
-                    labelStyle: const TextStyle(color: Colors.white54),
-                    prefixIcon: const Icon(
-                      Icons.person_outline,
-                      color: Colors.white54,
-                    ),
-                    filled: true,
-                    fillColor: const Color(0xFF1A1A1A),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Color(0xFFE50914),
-                        width: 1.5,
-                      ),
-                    ),
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.person),
                   ),
                 ),
                 const SizedBox(height: 16),
 
-                // Password field
+                // Kolom Password
                 TextField(
                   controller: _passwordController,
-                  obscureText: _obscurePassword,
-                  style: const TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
+                  obscureText: true,
+                  decoration: const InputDecoration(
                     labelText: "Password",
-                    labelStyle: const TextStyle(color: Colors.white54),
-                    prefixIcon: const Icon(
-                      Icons.lock_outline,
-                      color: Colors.white54,
-                    ),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        _obscurePassword
-                            ? Icons.visibility_off
-                            : Icons.visibility,
-                        color: Colors.white54,
-                      ),
-                      onPressed: () =>
-                          setState(() => _obscurePassword = !_obscurePassword),
-                    ),
-                    filled: true,
-                    fillColor: const Color(0xFF1A1A1A),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide.none,
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: const BorderSide(
-                        color: Color(0xFFE50914),
-                        width: 1.5,
-                      ),
-                    ),
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.lock),
                   ),
                 ),
                 const SizedBox(height: 12),
 
-                // Error message
+                // Pesan Error
                 if (_errorMessage != null)
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 8,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.red.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.error_outline,
-                          color: Colors.redAccent,
-                          size: 16,
-                        ),
-                        const SizedBox(width: 8),
-                        Text(
-                          _errorMessage!,
-                          style: const TextStyle(
-                            color: Colors.redAccent,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ],
-                    ),
+                  Text(
+                    _errorMessage!,
+                    style: const TextStyle(color: Colors.red),
                   ),
-                const SizedBox(height: 24),
+                const SizedBox(height: 12),
 
-                // Login button
+                // Tombol Login
                 SizedBox(
                   width: double.infinity,
-                  height: 52,
                   child: ElevatedButton(
                     onPressed: _login,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFE50914),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      elevation: 0,
-                    ),
-                    child: const Text(
-                      "Masuk",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 0.5,
-                      ),
-                    ),
+                    child: const Text("Login"),
                   ),
-                ),
-                const SizedBox(height: 16),
-                const Text(
-                  "Hint: username = admin, password = 3 digit terakhir NIM",
-                  style: TextStyle(color: Colors.white24, fontSize: 11),
-                  textAlign: TextAlign.center,
                 ),
               ],
             ),
